@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-
+ 
 public class HideColliderColor : MonoBehaviour
 {
-    private TilemapRenderer tilemapRender;
-    
+    private TilemapRenderer tilemapRender; // Objeto Tilemap
+   
     void Awake()
     {
-        tilemapRender = GetComponent<TilemapRenderer>();
+        tilemapRender = GetComponent<TilemapRenderer>(); // Instancia de Tilemap
     }
-
+ 
     // Start is called before the first frame update
     void Start()
     {
-        tilemapRender.enabled = false;        
+        tilemapRender.enabled = false; // Deshabilitar la visualizacion de los elementos del Tilemap
     }
 }
